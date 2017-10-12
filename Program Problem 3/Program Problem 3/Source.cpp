@@ -20,23 +20,23 @@ void pause() {
 
 
 void main() {
-	int three_digit_number;
+	int three_digit_number; //assigned variables
 
-
+for (int i = 0; i < 30; i++) {
 	cout << "Enter a three digit number, ";
 	Sleep(2000);
 	cout << "please. : ";
-	cin >> three_digit_number;
+	cin >> three_digit_number; 
 
 
 	int x = three_digit_number;
 	int A = x / 100;
 	int B = (x / 10) % 10;
 	int C = x % 10;
-
+//three digits are seperated using integer division
 
 	if (A < B && B < C) {
-		cout << "Ascending..." << endl;
+		cout <<x<< " is Ascending" << endl;
 		Sleep(2000);
 	}
 	else if (A > B && B > C) {
@@ -47,6 +47,8 @@ void main() {
 		cout << "Neither..." << endl;
 		Sleep(2000);
 	}
-
+}
+	
+//outputs if the number is ascending, descending, or neither
 	pause();
 }
